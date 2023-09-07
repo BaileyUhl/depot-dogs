@@ -1,4 +1,4 @@
-# Depot Dogs: A Website Dedicated to Home Depot Hot Dots
+# Depot Dogs: A Website Dedicated to Home Depot Hot Dogs
 
 The website includes:
 -A description of the site
