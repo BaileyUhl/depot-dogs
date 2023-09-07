@@ -1,0 +1,441 @@
+body {
+  background-color: #FFFFFA;
+  margin: 0;
+  padding: 0;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NAVBAR */
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+} 
+
+a {
+  text-decoration: none;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+li {
+  list-style: none;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #FFFFFA;
+  color: rgba(102, 102, 102);
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+  color: rgba(102, 102, 102);
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+/* LOGO */
+.logo {
+  width: 50%;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto; 
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 0.5em;
+  font-size: 16px;
+}
+
+.menu li:hover, .selected {
+  background-color: #feeadc;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+.menu li {
+  padding: 16px 40px;
+}
+
+/* DROPDOWN MENU */
+.services {
+  position: relative; 
+}
+
+.dropdown {
+  background-color: #FFFFFA;
+  padding: 1em 0;
+  position: absolute; /*WITH RESPECT TO PARENT*/
+  display: none;
+  border-radius: 8px;
+  top: 35px;
+}
+
+.dropdown li + li {
+  margin-top: 10px;
+}
+
+.dropdown li {
+  padding: 0.5em 1em;
+  width: 8em;
+  text-align: center;
+}
+
+.dropdown li:hover {
+  background-color: #feeadc;
+}
+
+.services:hover .dropdown {
+  display: block;
+}
+
+input[type=checkbox] {
+  display: none;
+} 
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 992px) {
+ .menu {
+    display:none;
+    position: absolute;
+    background-color:#FFFFFA;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 24px;
+  }
+
+  .menu li:hover {
+    background-color:#feeadc;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+  }
+
+  .dropdown li:hover {
+    background-color: #feeadc;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+}
+/* END NAVBAR STYLING */
+
+
+article > img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Stardos Stencil', cursive, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 40px 0px 24px 0px;
+    font-size: 3em;
+    color:rgba(250, 99, 4);
+    text-align: center;
+    width: 80%;
+}
+
+.paragraph {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    padding-bottom: 32px;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-weight: 100;
+    color:rgba(102, 102, 102);
+}
+
+
+.paragraph2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0 0 16px 0;
+    text-align: left;
+    width: 50%;
+    margin: 0 auto;
+    font-weight: 100;
+    color:rgba(102, 102, 102);
+}
+
+.container-top {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 0 64px 0;
+    padding: 0;
+  }
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: bold;
+    color:rgba(102, 102, 102);
+    width: 50%;
+    margin: 56px 0 0 0;
+    text-align: left;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color:rgba(102, 102, 102);
+    width: 50%;
+    margin: 16px 0 24px 0;
+    text-align: left;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color:#fa6304;
+    width: 50%;
+    margin: 32px 0 16px 0;
+    text-align: left;
+}
+
+.text-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block-testimonials {
+    width: 100%;
+    padding: 0 0 40px 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section > img {
+    width: 100%;
+}
+
+.h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    width: 80%;
+    line-height: 1.5em;
+    font-weight: bold;
+    color:rgba(102, 102, 102);
+    margin: 48px 0 8px 0;
+    text-align: left;
+}
+
+.paragraph-article-page {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color:#000000;
+    width: 80%;
+    margin-bottom: 0;
+    line-height: 2em;
+    text-align: left;
+}
+
+.date {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    color:#000000;
+    margin: 24px 0;
+    text-align: right;
+    width: 90%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "article-one article-two"
+    "article-three article-four";
+    gap: 24px;
+    justify-items: center;
+}
+
+#article-one {
+    grid-area: article-one;
+    width: 75%;
+    display: grid;
+    justify-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    justify-self:end;
+}
+
+#article-two {
+    grid-area: article-two;
+    width: 75%;
+    display: grid;
+    justify-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    justify-self:start;
+}
+
+#article-three {
+    grid-area: article-three;
+    width: 75%;
+    display: grid;
+    justify-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    justify-self:end;
+}
+
+#article-four {
+    grid-area: article-four;
+    width: 75%;
+    display: grid;
+    justify-items: center;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    justify-self:start;
+}
+
+section > a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0060df;
+    text-decoration: underline;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 24px 0 48px 0;
+    cursor: pointer;
+    text-align: left;
+    width: 80%;
+    cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Hot_Dog_Cursor.png'), auto;
+}
+
+section > a:hover {
+    color: #fa6304;
+}
+
+@media screen and (max-width: 992px)
+  {
+    .paragraph {
+        padding-bottom: 16px;
+        width: 80%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "article-one"
+            "article-two"
+            "article-three"
+            "article-four";
+    }
+
+    #article-one {
+        width: 90%;
+        justify-self:center;
+    }
+    
+    #article-two {
+        width: 90%;
+        justify-self:center;
+    }
+    
+    #article-three {
+        width: 90%;
+        justify-self:center;
+    }
+    
+    #article-four {
+        width: 90%;
+        justify-self:center;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      width: 80%;
+    }
+
+    h3 {
+      width: 80%;
+    }
+
+    h4 {
+      width: 80%;
+    }
+
+    .paragraph2 {
+      width: 80%;
+    }
+
+    .paragraph {
+      text-align: left;
+    }
+
+    article > img {
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+  }
+
+}
+
+/* FOOTER */
+footer {
+    background-color:#fa6304;
+    width:100%;
+    margin-top:50px;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+}
+/* END FOOTER */
+
